@@ -5,7 +5,7 @@
 <body>
 <?php
 $conn = mysqli_init();
-mysqli_real_connect($conn, 'dbpasuta.mysql.database.azure.com', 'framejframe6j@dbpasuta', 'Feulkai1234', 'ITFlab', guestbook);
+mysqli_real_connect($conn, 'dbpasuta.mysql.database.azure.com', 'framejframe6j@dbpasuta', 'Feulkai1234', 'ITFLab', guestbook);
 if (mysqli_connect_errno($conn))
 {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
@@ -23,9 +23,9 @@ while($Result = mysqli_fetch_array($res))
 {
 ?>
   <tr>
-    <td><?php echo $Result['Name'];?></div></td>
-    <td><?php echo $Result['Comment'];?></td>
-    <td><?php echo $Result['Link'];?></td>
+    <td><?php echo $Result['name'];?></div></td>
+    <td><?php echo $Result['comment'];?></td>
+    <td><?php echo $Result['link'];?></td>
   </tr>
 <?php
 }
